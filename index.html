@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <form>
+            <input type="text" placeholder="Ingrese su nombre">
+            <br>
+            <input type="checkbox" name="opcion">Opcion A
+            <br>
+            <input type="checkbox" name="opcion">Opcion B
+            <br>
+            <input type="checkbox" name="opcion">Opcion C
+            <br><br>
+            <input type="radio" name="comida">Pollo
+            <br>
+            <input type="radio" name="comida">Res
+            <br>
+            <input type="radio" name="comida">Cerdo
+            <br><br>
+            <input type="radio" name="acompanamientos" disabled>Frejol
+            <br>
+            <input type="radio" name="acompanamientos">Papas
+            <br>
+            <input type="radio" name="acompanamientos">Menestras
+            <br><br>
+            <input type="file" title="Elija un archivo no mayor a 10 megas">
+            <br><br>
+            <input type="password" disabled>Password
+            <br><br>
+            <input type="button" value="Registra tus datos">
+            <br><br>
+            <input type="submit" value="Clic para enviar">
+            <input type="reset" value="Limpiar formulario">
+        </form>
+        <br><br>
+
+        <form action="procesar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+          </form>
+
+          <fieldset><legend>Tipos de opciones</legend>
+            <strong>Opciones Multiples: </strong><br>
+            <input type="checkbox" name="opcion">Opcion A
+            <br>
+            <input type="checkbox" name="opcion">Opcion B
+            <br>
+            <input type="checkbox" name="opcion">Opcion C
+            <br><br>
+            <fieldset><legend><h2>Elija su menú</h2></legend>
+                <strong>Opción Única:</strong><br>
+                <input type="radio" name="comida" id="pollo1" class="aves">Pollo
+                <br>
+                <input type="radio" name="comida">Res
+                <br>
+                <input type="radio" name="comida">Cerdo
+                <br>
+                <input type="radio" name="comida" id="pavo1" class="aves">Pavo
+            <br>  <br>
+                <input type="radio" name="acompanamientos" disabled>Frejol
+                <br>
+                <input type="radio" name="acompanamientos">Papas
+                <br>
+                <input type="radio" name="acompanamientos">Menestras
+            </fieldset>
+        </fieldset>
+    </body>
+</html>

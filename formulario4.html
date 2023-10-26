@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="">
+
+        <label for="url">URL</label>
+        <input type="url" placeholder="Escribe tu URL aqui" id="url">
+        <br><br>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" pattern="(+[0-9]{2})[0-9]{9}" id="telefono" autocomplete="on">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autofocus>
+        <br><br>
+
+        <label for="numeros">Números</label>
+        <input type="number" name="numeros" id="numeros" value="15" min="10" max="20" step="2">
+        <br><br>
+
+        <label for="colores">Colores</label>
+        <input type="color" id="colores" value="#567890">
+        <br><br>
+
+        <label for="buscar">Buscar</label>
+        <input type="search" id="buscar"><input type="submit">
+        <br><br>
+
+        <label for="range">Rango entre 0 y 50</label>
+        <input type="range" id="rango" min="0" max="50" value="50" step="10">
+        <br><br>
+
+        <label for="fechahora">Feche y Hora</label>
+        <input type="datetime-local" id="fechahora">
+        <br><br>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+
+        <label for="semanas">Semana</label>
+        <input type="week" name="semanas" id="semanas">
+        <br><br>
+
+        <input type="submit" value="Click para enviar">
+        <input type="reset" value="Limpiar formulario">
+        </form> 
+    </body>
+</html>
